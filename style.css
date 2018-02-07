@@ -1,0 +1,289 @@
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Body  (text): #030406
+# Heading Color #3a4a6e
+# Theme Color (link color) #3a4a6e
+# Mid grey (sub header) #9aadd6
+# Background Color #ffffff
+# -------------------------------------------------------------------*/
+
+body {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #030406;
+    font-weight: 300;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.container-fluid, .parent {
+    height: 100%;
+}
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h2, h3, h4, h5, h6, small {
+    color: #3a4a6e;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.8em;
+    font-weight: 700;
+    color: #9aadd6;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: 500;
+    margin: 0;
+}
+
+h4 {
+    font-size: 15px;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+p {
+    color: #3a4a6e;
+    margin: 0;
+}
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+
+a {
+    color: #3a4a6e;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+a, a:active, a:focus, a:active {
+    text-decoration: none;
+    outline: none
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #9aadd6;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* --------------------
+ * Column Block
+ * -------------------*/
+
+.col {
+    height: 100vh;
+    position: relative;
+    float: left;
+    padding: 0;
+}
+
+.left-col-block {
+    background-color: #3a4a6e;
+}
+
+.right-col-block {
+    overflow-y: scroll;
+    background-color: rgba(245, 247, 249, 1);
+    box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.23);
+}
+
+/* --------------------
+ * Section Background
+ * -------------------*/
+
+.gray-bg {
+    background-color: rgba(237, 240, 246, .5);
+}
+
+/* --------------------
+ *  main Wrapper
+ * -------------------*/
+
+#main-wrapper {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/*-------------------
+ * Section Wrapper
+ *-------------------*/
+
+.section-wrapper {
+    padding: 30px;
+}
+
+/*-------------------
+ * Content Item
+ *-------------------*/
+
+.content-item {
+    padding-bottom: 30px;
+}
+
+.content-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-------------------------------*/
+
+.header {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+
+.header .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.header .content h1 {
+    font-size: 36px;
+    color: #d4e0fc;
+    line-height: 1;
+    margin: 0;
+}
+
+.header .content p {
+    font-size: 18px;
+    color: #d4e0fc;
+}
+
+.header .content .social-icon {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.header .content .social-icon li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.header .content .social-icon li a {
+    display: block;
+    font-size: 12px;
+    color: #d4e0fc;
+    width: 34px;
+    height: 34px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid rgba(212, 224, 252, .2);
+}
+
+.header .content .social-icon li a:hover {
+    border-color: #d4e0fc;
+}
+
+@media (max-width: 600px) {
+    .header .profile-img {
+        z-index: 1;
+    }
+    .header .content {
+        z-index: 2;
+    }
+}
+
+/*-----------------------------
+ * Animations
+ *-------------------------------*/
+
+:root {
+    --delay-11: calc(random(2) + 1.6)s;
+}
+
+#header-1 {
+    -moz-animation-duration: .7s;
+    -moz-animation-delay: .3s;
+}
+
+#header-2 {
+    -moz-animation-duration: .7s;
+    -moz-animation-delay: .6s;
+}
+
+#header-3 {
+    -moz-animation-duration: .7s;
+    -moz-animation-delay: .9s;
+}
+
+#cloud {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+}
+
+.rain-drop {
+    -webkit-animation-duration: 1.15s;
+    -moz-animation-duration: 1.15s;
+}
+
+.section-wrapper {
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -webkit-animation-delay: 3.1s;
+    -moz-animation-delay: 3.1s;
+}
+
+#rain-grid {
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+.rain-drop {
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: #9aadd6;
+    padding-top: 3%;
+    width: 20%;
+    float: left;
+}

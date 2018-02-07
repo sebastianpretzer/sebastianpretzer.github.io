@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sebastian Pretzer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin Sans:light" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row parent">
+            <div class="col left-col-block" style="z-index:1;">
+                <header class="header">
+                    <div id="rain-animation">
+                        <img id="cloud" src="binary_cloud.png" style="padding-top:25%;width:30%;display:block;margin:auto;">
+                        <div id="rain-grid"></div>
+                    </div>
+                    <div class="content text-center">
+                        <h1 id="header-1">Hi, I'm Sebastian Pretzer</h1>
+                        <p id="header-2">A student in computer science</p>
+                        <ul class="social-icon" id="header-3">
+                            <li><a href="https://www.facebook.com/sebastianpretzer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="resume.pdf" target="_blank" style="font-weight:700;">CV</a></li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+
+            <div class="col right-col-block" style="z-index:2;">
+                <section class="section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>About</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    I am a senior CS student studying at Northwestern University. Most of my current research is in natural language processing. I am extremely interested in the intrinsic properties of embeddings and the power of neural networks for language modeling. I
+                                    am also interested in the applications of internet of things devices and how they can improve the quantifiability of the world around us.
+                                </p>
+                                <p>
+                                    I am originally from Washington DC, but I stay away from politics as much as I can. I currently live in Evanston, a suburb of Chicago, and I can't wait to move back into an apartment in a city center. I don't like having too much space or too many things,
+                                    and I am a strong believer in quality over quanity. Check out what I am all about below.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-wrapper section-experience gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>Work Experience</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- .experience-item -->
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        <h2><a href="http://websail.eecs.northwestern.edu/">WebSAIL</a></h2>
+                                        <small>January 2018 - Present</small>
+                                    </div>
+                                    <h3>Research Assistant</h3>
+
+                                </div>
+                                <!-- .experience-item -->
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        <h2><a href="https://www.backlightresumes.com/">Backlight Resumes</a></h2>
+                                        <small>June 2017 - Present</small>
+                                    </div>
+                                    <h3>Vice President of Research</h3>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!-- .container-fluid -->
+
+                </section>
+                <!-- .section-experience -->
+
+                <section class="section-wrapper section-interest">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>Projects</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-item">
+                                    <h2>Definition Modeling</h2>
+                                    <p>
+                                        In <a href="https://arxiv.org/abs/1612.00394" style="font-style: italic;">Definition Modeling</a>, Noraset et al. demostrate the effectiveness of using word embeddings to extract the word's definition. The researchers
+                                        used a RNN language model, as well as a character-level CNN.
+                                    </p>
+                                    <p>
+                                        My goal task is to improve the overall system. By adding the part-of-speech to the model, this turns the issue of a one-to-many word to definition closer to a one-to-one word to definition problem.
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>Editing via Machine Translation</h2>
+                                    <p>
+                                        In <a href="https://arxiv.org/abs/1609.08144" style="font-style: italic;">Google's Neural Machine Translation System</a>, Wu et al. propose a sequence-to-sequence LSTM encoder-decoder model to translate between
+                                        languages.
+                                    </p>
+                                    <p>
+                                        I helped modify the system to edit English sentences in resumes. By looking at unedited resumes as the source language, and edited resumes as the target language, we were able to use Google's model to our advantage. We also implemented a few other features
+                                        such as transfer learning and backtranslation to improve the model and combat the lack of high quality data that we had.
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>Crowd Density Monitoring</h2>
+                                    <p>
+                                        I built a sensor system that tracks the number of people going in and out of a space, such as university cafeteria, library, etc. Using wireless Arduinos as the sensor system, live data is sent to a Firebase backend. A frontend website geared towards
+                                        enterprise use gives users an overview of the entire system. </p>
+                                    <p>
+                                        Using regression and machine learning, I tried to apply predictive capabilities to the system, so that administrators and students on campus can see how crowded facilities around campus are at a given time and in the future.
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>The Modern NBA Positions</h2>
+                                    <p>
+                                        In the current modern era of NBA basketball, <a href="goo.gl/wHdWUr" style="font-style:italic">research has been done to reclassify player positions</a>. The 5 standard positions in the NBA oversimplify the vast
+                                        range of skillsets players have. A few different methods of have been used to reclassify positions.
+                                    </p>
+                                    <p>
+                                        My goal was to go beyond just reclassifying players. I looked at a few different metrics, such as regularized adjusted plus-minus, win shares, efficiency, and on/off splits. By looking at stats of player types while they are on the floor with other combinations
+                                        of player types, many insights can be drawn of what type of player combinations work well together.
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>Finding Undervalued Stocks</h2>
+                                    <p>Using Wharton Research Data Services, I collected data on S&P 500 companies over a 15 year period. Using different regressions and machine learning techniques, I attempted to predict which stocks were selling below
+                                        what they were truly worth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                    </div>
+                </section>
+                <!-- .section-publications -->
+
+                <section class="section-wrapper section-education gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>Education</h1></div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- .experience-item -->
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        <h2>Northwestern University</h2>
+                                        <small>2018 - 2019</small>
+                                    </div>
+                                    <h3>MS in Computer Science</h3>
+
+                                </div>
+                                <!-- .experience-item -->
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        <h2>Northwestern University</h2>
+                                        <small>2015 - 2018</small>
+                                    </div>
+                                    <h3>BA in Computer Science</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!-- .container-fluid -->
+
+                </section>
+                <!-- .section-education -->
+
+                <section class="section-wrapper section-interest">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>Interests</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-item">
+                                    <h2>Basketball</h2>
+                                    <p>Basketball is my favorite excercise activity because I can workout, have fun, keep a competitive drive, and build friendships. To me, pick up basketball is the purest form of the sport, and it cannot be more enjoyable
+                                        than that. Although it is still exciting to root for the Wizards on their march to the NBA finals!</p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>Cooking</h2>
+                                    <p>
+                                        I have recently bought a sous vide machine and am trying all sorts of recipes for chicken and fish. Combined with my cast iron pan, I almost captured the same level of quality of food I get when I go home to my dad's cooking.
+                                    </p>
+                                </div>
+                                <div class="content-item">
+                                    <h2>Craft Beers</h2>
+                                    <p>
+                                        As a 22 year old, I know I am only starting out. But I have been to 3 beer festivals and on more brewery tours than I can count on my hands. Shout out to Half Acre, my favorite local brewery. Their tour is a blast.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                    </div>
+                </section>
+                <!-- .section-interests -->
+
+                <section class="section-contact section-wrapper gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h1>Contact</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <address>
+                                        <h2>Email</h2>
+                                        <a href="mailto:contact@pretzer.io">contact@pretzer.io</a>
+                                    </address>
+                            </div>
+                        </div>
+                    </div>
+                    <!--.container-fluid-->
+                </section>
+                <!--.section-contact-->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+
+</html>
